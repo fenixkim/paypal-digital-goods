@@ -1,0 +1,10 @@
+This branch of the PayPal Digital Goods PHP Library offers a
+neater version specifically designed to ship with an application. 
+
+To use this branch as a Git submodule in your application's 
+repository, use the following command:
+
+	# Add the PayPal Library as a submodule
+	git submodule add git://github.com/thenbrent/paypal-digital-goods.git paypal
+
+The full reference for this library can be found here: https://github.com/thenbrent/paypal-digital-goods
