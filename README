@@ -7,4 +7,13 @@ repository, use the following command:
 	# Add the PayPal Library as a submodule
 	git submodule add git://github.com/thenbrent/paypal-digital-goods.git paypal
 
+	# Set the submodule to use the submodule branch  
+	cd paypal 
+	git checkout -b submodule origin/submodule
+
+When cloning your application's Git repo, be sure to specify the --recursive option to include the contents of the PayPal submodule.
+
+	# Clone my plugin and all submodules 
+ 	git clone --recursive git://github.com/username/app-name.git
+
 The full reference for this library can be found here: https://github.com/thenbrent/paypal-digital-goods
