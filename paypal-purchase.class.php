@@ -239,7 +239,7 @@ class PayPal_Purchase extends PayPal_Digital_Goods {
 				$item_count = 0;
 				foreach( $this->purchase->items as $item ) {
 					
-					$api_request  .= '&L_PAYMENTREQUEST_0_ITEMCATEGORY'.$item_count.'=Digital'
+					$api_request  .= '&L_PAYMENTREQUEST_0_ITEMCATEGORY'.$item_count.'=Physical'
 								  .  '&L_PAYMENTREQUEST_0_NAME'.$item_count.'=' .  urlencode( $item['item_name'] )
 								  .  '&L_PAYMENTREQUEST_0_AMT'.$item_count.'=' . $item['item_amount']
 								  .  '&L_PAYMENTREQUEST_0_QTY'.$item_count.'=' . $item['item_quantity'];
@@ -287,7 +287,7 @@ class PayPal_Purchase extends PayPal_Digital_Goods {
 				// Item details
 				$item_count = 0;
 				foreach( $this->purchase->items as $item ) {
-					$api_request  .= '&L_PAYMENTREQUEST_0_ITEMCATEGORY'.$item_count.'=Digital'
+					$api_request  .= '&L_PAYMENTREQUEST_0_ITEMCATEGORY'.$item_count.'=Physical'
 								  .  '&L_PAYMENTREQUEST_0_NAME'.$item_count.'=' .  urlencode( $item['item_name'] )
 								  .  '&L_PAYMENTREQUEST_0_AMT'.$item_count.'=' . $item['item_amount']
 								  .  '&L_PAYMENTREQUEST_0_QTY'.$item_count.'=' . $item['item_quantity'];
